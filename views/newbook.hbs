@@ -1,0 +1,11 @@
+<h2 class="centeredHeader">Add a Book</h2>
+<h3 id="warning">{{#if warning}}{{warning}}{{/if}}</h3>
+<div class="form">
+    <h3>Filter Books By:</h6>
+    <form method="POST" action="http://localhost:3000/books-new">
+        Title: <input type="text" name="title" value=""><br>
+        Author: <input type="text" name="author" value=""><br>
+        ISBN: <input type="text" name="isbn" value=""><br>
+        <input type="submit" value="Add this book!">
+    </form>
+</div>

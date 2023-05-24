@@ -1,0 +1,25 @@
+<h2 class="centeredHeader">Books</h2>
+<div class="form">
+    <h3>Filter Books By:</h6>
+    <form method="GET" action="http://localhost:3000/books">
+        <select required=true name="filter">
+                <option value=""> select </option>
+                <option value="title">Title</option>
+                <option value="author">Author</option>
+                <option value="isbn">ISBN</option>
+        </select>
+        <input type="text" name="filterVal" value="">
+        <input type="submit" value="Filter">
+    </form>
+</div>
+<br><br>
+<ul>
+{{#each result}}
+<li>Title: <a href="/books/{{this.slug}}">{{this.title}}</a></li>
+    <ul>
+        <li>Author: {{this.author}}</li>
+        <li>ISBN: {{this.isbn}}</li>
+    </ul>
+    <br>
+{{/each}}
+</ul>

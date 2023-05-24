@@ -1,0 +1,109 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    
+}
+
+h1 {
+    color: #168e52;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    font-size: 90px;
+}
+
+h2 {
+    color: rgb(222, 243, 228);
+    margin-top: 40px;
+    margin-bottom: 80px;
+    font-size: 80px;
+}
+
+h2.centeredHeader {
+    text-align: center;
+}
+
+#warning {
+    color: rgb(25, 200, 74);
+    text-align: center;
+}
+
+div.header {
+    position: relative;
+}
+
+div.navLinks {
+    position: relative;
+    text-align: center;
+}
+
+div.form {
+    display: block;
+    text-align: center;
+}
+
+a {
+    text-align: center;
+}
+
+a:visited {
+    color: rgb(252, 192, 255);
+}
+
+a:link {
+    color: pink;
+}
+
+a:hover {
+    color: rgb(111, 111, 137);
+}
+
+.rating {
+    display: inline-block;
+  }
+  
+  .rating input {
+    display: none;
+  }
+  
+  .rating label {
+    float: right;
+    cursor: pointer;
+    color: lightgray;
+  }
+  
+  .rating label i {
+    font-size: 12px;
+  }
+  
+  .rating input:checked ~ label {
+    color: gold;
+  }
+  
+
+/* the concept for using this scheme to render stars was found at
+https://stackoverflow.com/questions/21376113/how-to-repeat-an-item-multiple-times-in-html-or-css */
+
+span {
+    display:block;
+}
+
+span[n="1"]:before {
+   content: "★";
+}
+
+span[n="2"]:before {
+   content: "★★";
+}
+
+span[n="3"]:before {
+   content: "★★★";
+}
+
+span[n="4"]:before {
+   content: "★★★★";
+}
+
+span[n="5"]:before {
+   content: "★★★★★";
+}
