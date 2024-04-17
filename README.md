@@ -1,4 +1,4 @@
-# White whale bookstore - A Book Review Site with MongoDB Integration
+# Bookstore - A Book Review Site with MongoDB Integration
 
 For this site with a blindingly creative name, I wrote an Express web application where users could enter basic information
 about a book (author, title, ISBN), and after sanitization, the data would be saved on a MongoDB database. The app also makes
